@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Petshop</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#ff6b6b">
+</head>
+<body>
+  <header>
+    <h1>🐾 PetLove</h1>
+    <p>O melhor petshop da cidade</p>
+  </header>
+
+  <main>
+    <section class="banner">
+      <h2>Bem-vindo ao PetLove!</h2>
+      <p>Banho, tosa, ração e muito carinho pro seu pet.</p>
+    </section>
+
+    <section class="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="cards">
+        <div class="card">🛁 Banho & Tosa</div>
+        <div class="card">🍖 Ração Premium</div>
+        <div class="card">💉 Vacinação</div>
+        <div class="card">🏨 Hotelzinho</div>
+      </div>
+    </section>
+
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>📱 (11) 99999-9999</p>
+      <p>📍 Rua dos Pets, 123</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PetLove - Feito com ❤️</p>
+  </footer>
+
+  <script src="sw.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registrado!'))
+        .catch(err => console.log('Erro SW:', err));
+    }
+  </script>
+</body>
+</html>
